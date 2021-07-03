@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-	--purple: #e3d4ff66;
+	--purple: #e7daff;
 	--grey: #4f555a;
 	--imbPlex: 'IBM Plex Sans', sans-serif;
 }
@@ -32,7 +32,13 @@ ul {
 	list-style: none;
 }
 
-.nav-menu, footer {
+.header-menu {
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+}
+
+.header-menu, .footer {
 	height: 80px;
 }
 
@@ -47,6 +53,10 @@ ul {
 
 .nav-menu li:hover a {
 	text-decoration: underline;
+}
+
+.content-main {
+	padding-top: 100px;
 }
 
 .mb-5 {

@@ -16,30 +16,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<nav class="nav-menu d-flex align-items-center justify-content-end">
-						<ul class="d-flex align-items-center">
+					<div class="menuToggle">
+						<input type="checkbox">
+
+						<span class="button-line"></span>
+						<span class="button-line"></span>
+						<span class="button-line"></span>
+					<nav class="nav-menu d-flex align-items-md-center justify-content-md-end">
+						<ul class="d-flex flex-md-row flex-column align-items-md-center">
 							<li><a href="#sobre">Sobre</a></li>
 							<li><a href="#conhecimentos">Conhecimentos</a></li>
 							<li><a href="#projetos">Projetos</a></li>
 							<li><a href="#contato">Contato</a></li>
 						</ul>
 					</nav>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="content-main">
-		<section class="mb-5">
+		<section class="section-main">
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<figure>
 							<img src="">
 						</figure>
 						alguma imagem aqui
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<p>Olá, meu nome é <strong>Geisa Lima</strong>. </p>
 						<p>Seja Bem-vindo(a)!</p>
 					</div>
@@ -47,28 +54,28 @@
 			</div>
 		</section>
 
-		<section class="mb-5 bg-purple" id="sobre">
+		<section class="section-main bg-purple" id="sobre">
 			<div class="container">
 				<h1 class="section-title text-center">Sobre mim</h1>
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<figure>
 							<img src="">
 						</figure>
 						alguma imagem aqui
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<p>Tenho 22 anos e sou de Fortaleza - Ceará. Técnica em Informática e formada em Análise e Desenvolvimento de Sistemas, atualmente trabalho no Grupo de comunicação OPOVO como Front-End. Nas horas vagas gosto de sair com amigos e viajar com a família.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="mb-5" id="conhecimentos">
+		<section class="section-main" id="conhecimentos">
 			<div class="container">
 				<h1 class="section-title text-center">Conhecimentos</h1>
 				<div class="row">
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<article class="card-border d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/html.png">
@@ -76,7 +83,7 @@
 							<span>HTML5</span>
 						</article>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<article class="card-border d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/css.png">
@@ -84,7 +91,7 @@
 							<span>CSS3</span>
 						</article>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<article class="card-border d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/js.png">
@@ -92,7 +99,7 @@
 							<span>Javascript</span>
 						</article>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<article class="card-border d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/git.png">
@@ -104,11 +111,11 @@
 			</div>
 		</section> 
 
-		<section class="mb-5 bg-purple" id="projetos">
+		<section class="section-main bg-purple" id="projetos">
 			<div class="container">
 				<h1 class="section-title text-center">Projetos</h1>
 				<div class="row">
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://mais.opovo.com.br">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>OPOVO Mais</h2>
@@ -116,7 +123,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://especiais.opovo.com.br/">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Especiais OPOVO</h2>
@@ -124,7 +131,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://opovo.com.br/">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Portal OPOVO</h2>
@@ -132,7 +139,7 @@
 							</article>
 						</a>
 					</div>					
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://assine.opovo.com.br/">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Assine OPOVO</h2>
@@ -143,7 +150,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://blogs.opovo.com.br">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Template Blogs OPOVO</h2>
@@ -151,7 +158,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://especial.opovo.com.br/anuariodedecoracao/">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Anuário de Decoração</h2>
@@ -159,7 +166,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://clube.opovo.com.br/">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Clube OPOVO+</h2>
@@ -167,7 +174,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-md-6 col-lg-3 col-12">
 						<a href="https://mais.opovo.com.br/web-stories">
 							<article class="card-border d-flex flex-column align-items-center justify-content-center">
 								<h2>Web Stories</h2>
@@ -179,10 +186,10 @@
 			</div>
 		</section>
 
-		<section class="mb-5" id="contato">
+		<section class="section-main" id="contato">
 			<div class="container">
 				<div class="row">
-					<div class="col-8">
+					<div class="col-md-7 col-12 col-contact">
 						<h1 class="section-title">Contato</h1>
 						<ul class="lista-item">
 							<li>geisalima228@gmail.com</li>
@@ -190,7 +197,7 @@
 						</ul>
 					</div>
 
-					<div class="col-4">
+					<div class="col-md-5 col-12">
 						<h1 class="section-title">Redes Sociais</h1>
 						<ul class="lista-item">
 							<li>

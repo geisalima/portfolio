@@ -1,19 +1,31 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
 	--purple: #e3d4ff66;
-	--imbPlex: 'IBM Plex Sans';
+	--grey: #4f555a;
+	--imbPlex: 'IBM Plex Sans', sans-serif;
 }
 
 body {
 	font-family: var(--imbPlex);
+	color: var(--grey);
+}
+
+p {
+	font-weight: 400;
 }
 
 a {
 	text-decoration: none;
+	color: var(--grey);
 }
 
 ul {
@@ -57,11 +69,24 @@ section {
 
 .card-border {
     height: 300px;
-    border: 2px solid;
+    border: 2px solid var(--grey);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgb(79 85 90);
     margin-bottom: 30px;
+}
+
+.card-border h2 {
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.card-border span {
+	font-weight: 500;
+}
+
+.card-border p {
+	text-align: center;
 }
 
 .card-border figure {

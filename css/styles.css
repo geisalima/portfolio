@@ -42,6 +42,7 @@ ul {
 
 .nav-menu li a {
 	transition: .5s;
+	font-weight: 500;
 }
 
 .nav-menu li:hover a {

@@ -10,47 +10,48 @@
 	<meta name="creator" content="Geisa Lima">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
-	<header class="header-menu d-flex align-items-center">
+	<header class="header-menu d-flex align-items-center bg-lightYellow">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="menuToggle">
-						<input type="checkbox">
+					<nav class="nav-menu d-flex align-items-center justify-content-between">
+						<h1 class="logo-nav">
+							<a href="">
+								<figure>
+									<img src="">
+									<figcaption>| PORTFÓLIO</figcaption>
+								</figure>
+							</a>
+						</h1>
 
-						<span class="button-line"></span>
-						<span class="button-line"></span>
-						<span class="button-line"></span>
+						<div class="menuToggle">
+							<input type="checkbox">
 
-						<nav class="nav-menu d-flex align-items-md-center justify-content-between">
-							<h1 class="logo-nav">
-								<a href="">
-									<figure>
-										<img src="">
-										<figcaption>| PORTFÓLIO</figcaption>
-									</figure>
-								</a>
-							</h1>
-							<ul class="d-flex flex-md-row flex-column align-items-md-center">
+							<span class="button-line"></span>
+							<span class="button-line"></span>
+							<span class="button-line"></span>
+
+							<ul class="list-menu d-flex flex-md-row flex-column align-items-md-center">
 								<li><a href="#sobre">Sobre</a></li>
 								<li><a href="#conhecimentos">Conhecimentos</a></li>
 								<li><a href="#projetos">Projetos</a></li>
 								<li><a href="#contato">Contato</a></li>
 							</ul>
-						</nav>
-					</div>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="content-main">
-		<section class="section-main bg-lightBlue section-presentation">
+		<section class="section-main bg-lightBlue section-presentation d-flex justify-content-center align-items-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 mx-auto">
@@ -58,9 +59,9 @@
 							<figure>
 								<img src="" alt="">
 							</figure>
-							<h2 class="font-weight-bold">Olá mundo!</h2>
-							<p class="font-weight-bold">Meu nome é Geisa Lima.</p>
-							<p>Seja bem-vindo ao meu mundo!</p>
+							<h2 class="font-weight-medium">Olá mundo!</h2>
+							<p class="font-weight-medium subtitle">Meu nome é Geisa Lima.</p>
+							<p class="font-weight-light">Seja bem-vindo ao meu mundo!</p>
 						</div>
 					</div>
 				</div>
@@ -68,7 +69,7 @@
 		</section>
 
 		<section class="container section-about bg-darkblue" id="sobre">
-			<div class="">
+			<div class="content-about">
 				<div class="row">
 					<div class="col-md-4 col-12">
 						<figure>
@@ -78,7 +79,7 @@
 					</div>
 					<div class="col-md-8 col-12">
 						<h1 class="section-title">Sobre mim</h1>
-						<p>Tenho 22 anos e sou de Fortaleza - Ceará. Técnica em Informática e formada em Análise e Desenvolvimento de Sistemas, atualmente trabalho no Grupo de comunicação OPOVO como Front-End. Nas horas vagas gosto de sair com amigos e viajar com a família.</p>
+						<p class="font-weight-light">Tenho 22 anos e sou de Fortaleza - Ceará. Técnica em Informática e formada em Análise e Desenvolvimento de Sistemas, atualmente trabalho no Grupo de comunicação OPOVO como Front-End. Nas horas vagas gosto de sair com amigos e viajar com a família.</p>
 					</div>
 				</div>
 			</div>
@@ -88,90 +89,90 @@
 			<div class="container">
 				<h1 class="section-title text-center">Conhecimentos</h1>
 				<div class="row">
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-lg-3 col-6">
 						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/html.png" alt="Imagem do HTML5">
+								<figcaption class="font-weight-bold text-center">HTML5</figcaption>
 							</figure>
-							<span>HTML5</span>
 						</article>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-lg-3 col-6">
 						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/css.png" alt="Imagem do CSS3">
+								<figcaption class="font-weight-bold text-center">CSS3</figcaption>
 							</figure>
-							<span>CSS3</span>
 						</article>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-lg-3 col-6">
 						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/js.png" alt="Imagem do Javascript">
+								<figcaption class="font-weight-bold text-center">Javascript</figcaption>
 							</figure>
-							<span>Javascript</span>
 						</article>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-lg-3 col-6">
 						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
-								<img src="imgs/git.png" alt="Imagem do Git">
+								<img src="imgs/github.png" alt="Imagem do Git">
+								<figcaption class="font-weight-bold text-center">Git</figcaption>
 							</figure>
-							<span>Git</span>
 						</article>
 					</div>
 				</div>
 			</div>
 		</section> 
 
-		<section class="section-main" id="projetos">
+		<section class="section-main section-project" id="projetos">
 			<div class="container">
 				<h1 class="section-title text-center">Projetos</h1>
 				<div class="row">
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://mais.opovo.com.br">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
-									<h2>OPOVO Mais</h2>
+									<h2>Plataforma OPOVO Mais</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Primeira plataforma multistreaming da América Latina de jornalismo e cultura.</p>
+									<p class="font-weight-light">Primeira plataforma multistreaming da América Latina de jornalismo e cultura.</p>
 								</div>
 							</article>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://especiais.opovo.com.br/">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Especiais OPOVO</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Páginas utilizadas para adicionar conteúdos chamativos, como datas comemorativas e outros.</p>
+									<p class="font-weight-light">Páginas utilizadas para adicionar conteúdos chamativos, como datas comemorativas e outros.</p>
 								</div>
 							</article>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://opovo.com.br/">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Portal OPOVO</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Portal de notícias sobre Ceará, Brasil e Mundo.</p>
+									<p class="font-weight-light">Portal de notícias sobre Ceará, Brasil e Mundo.</p>
 								</div>
 							</article>
 						</a>
 					</div>					
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://assine.opovo.com.br/">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Assine OPOVO</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Site com informações sobre planos e realizar assinaturas</p>
+									<p class="font-weight-light">Site com informações sobre planos e realizar assinaturas</p>
 								</div>
 							</article>
 						</a>
@@ -179,50 +180,50 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://blogs.opovo.com.br">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Template Blogs OPOVO</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Páginas para publicação de conteúdo com diversas customizações e com dois modelos disponíveis (listagem e mosaico).</p>
+									<p class="font-weight-light">Páginas para publicação de conteúdo com diversas customizações e com dois modelos disponíveis (listagem e mosaico).</p>
 								</div>
 							</article>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://especial.opovo.com.br/anuariodedecoracao/">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Anuário de Decoração</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Site para publicações de conteúdos relacionados à decoração.</p>
+									<p class="font-weight-light">Site para publicações de conteúdos relacionados à decoração.</p>
 								</div>
 							</article>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://clube.opovo.com.br/">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Clube OPOVO+</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Clube de descontos exclusivo para assinantes do multistreaming O POVO Mais.</p>
+									<p class="font-weight-light">Clube de descontos exclusivo para assinantes do multistreaming O POVO Mais.</p>
 								</div>
 							</article>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3 col-12">
+					<div class="col-sm-6 col-lg-3 col-12">
 						<a href="https://mais.opovo.com.br/web-stories">
 							<article class="card-project d-flex flex-column">
 								<header class="header-project bg-darkblue d-flex align-items-center justify-content-center">
 									<h2>Web Stories</h2>
 								</header>
 								<div class="content-project d-flex align-items-center justify-content-center">
-									<p>Uma versão de Stories para web, onde agrega vídeos, imagens com animações, gifs e etc.</p>
+									<p class="font-weight-light">Uma versão de Stories para web, onde agrega vídeos, imagens com animações, gifs e etc.</p>
 								</div>
 							</article>
 						</a>
@@ -231,22 +232,33 @@
 			</div>
 		</section>
 
-		<section class="section-main" id="contato">
+		<section class="section-main section-contact bg-lightYellow" id="contato">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-contact">
 						<h1 class="section-title text-center">Contatos</h1>
-						<ul class="lista-item">
+						<ul class="lista-item d-flex align-items-center justify-content-center">
 							<li>
-								<a href="https://www.linkedin.com/in/geisa-lima/">LinkedIn</a>
+								<a href="https://www.linkedin.com/in/geisa-lima/" title="LinkedIn">
+									<figure>
+										<img src="imgs/linkedin.png" alt="Imagem do LinkedIn">
+										<figcaption class="d-none">LinkedIn</figcaption>
+									</figure>
+								</a>
 							</li>
 							<li>
-								<a href="https://github.com/geisalima/">GitHub</a>
+								<a href="https://github.com/geisalima/" title="GitHub">
+									<figure>
+										<img src="imgs/github.png" alt="Imagem do GitHub">
+										<figcaption class="d-none">GitHub</figcaption>
+									</figure>
+								</a>
 							</li>
 						</ul>
-						<ul class="lista-item">
-							<li>geisalima228@gmail.com</li>
-							<li>(85) 98777-1962</li>
+
+						<ul class="lista-item d-flex flex-wrap align-items-center justify-content-center">
+							<li class="font-weight-medium">geisalima228@gmail.com </li>
+							<li class="font-weight-medium">(85) 98777-1962</li>
 						</ul>
 					</div>
 				</div>

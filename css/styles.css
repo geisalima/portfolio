@@ -11,12 +11,15 @@ html {
 :root {
 	--purple: #e7daff;
 	--grey: #4f555a;
-	--imbPlex: 'IBM Plex Sans', sans-serif;
+	--darkBlue: #0D2A4A;
+	--lightYellow: #E9DAC7;
+	--lightBlue: #D2E2E1;
+	--rubik: 'Rubik', sans-serif;
 }
 
 body {
-	font-family: var(--imbPlex);
-	color: var(--grey);
+	font-family: var(--rubik);
+	color: var(--darkBlue);
 }
 
 p {
@@ -25,17 +28,22 @@ p {
 
 a {
 	text-decoration: none;
-	color: var(--grey);
+	color: var(--darkBlue);
 }
 
 ul {
 	list-style: none;
 }
 
+.font-weight-bold {
+	font-weight: 700;
+}
+
 .header-menu {
 	position: fixed;
 	width: 100%;
 	z-index: 9;
+	background-color: var(--lightYellow);
 }
 
 .header-menu, .footer {
@@ -49,6 +57,7 @@ ul {
 .nav-menu li a {
 	transition: .5s;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .nav-menu li:hover a {
@@ -56,55 +65,110 @@ ul {
 }
 
 .content-main {
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .mb-5 {
 	margin-bottom: 50px;
 }
 
+.section-presentation {
+	height: 80vh;
+}
+
+.section-about {
+	margin-top: -100px;
+	margin-bottom: -100px;
+	border-radius: 60px 60px 0 0;
+	padding: 100px;
+	min-height: 40vh;
+	position: relative;
+}
+
+.section-skills {
+	padding: 220px 0;
+}
+
 .section-title {
-	color: #4f555a;
+	/*color: #4f555a;*/
 	font-weight: bold;
 	margin-bottom: 30px;
 	font-size: 36px;
 }
 
-.bg-purple {
-	background-color: var(--purple);
+.bg-darkblue {
+	background-color: var(--darkBlue);
+	color: #fff;
+}
+
+.bg-lightBlue {
+	background-color: var(--lightBlue);
+	color: #0D2A4A;
+	/*padding: 100px;*/
 }
 
 .section-main {
-	padding: 80px 0;
+	/*padding: 80px 0;*/
 }
 
-.card-border {
-    height: 300px;
-    border: 2px solid var(--grey);
+.card-skills {
+	max-width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px rgb(79 85 90);
-    margin-bottom: 30px;
+    background-color: #fff;
 }
 
-.card-border h2 {
+.card-project {
+	border-radius: 10px;
+	max-width: 250px;
+	height: 310px;
+	background-color: var(--lightYellow);
+	overflow: hidden;
+	box-shadow: 0 3px 6px #00000029;
+	margin-bottom: 50px;
+}
+
+.header-project {
+	width: 100%;
+	height: 30%;
+	padding: 45px 15px;
+}
+
+.header-project h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.content-project {
+	height: 70%;
+	padding: 15px;
+}
+
+.content-project p {
+	text-align: center;
+}
+
+.card-skills h2 {
 	margin-bottom: 10px;
 	font-weight: 500;
 }
 
-.card-border span {
+.card-skills span {
 	font-weight: 500;
 }
 
-.card-border p {
+.card-skills p {
 	text-align: center;
 }
 
-.card-border figure {
+.card-skills figure {
 	margin-bottom: 20px;
 }
 
-.card-border h2 {
+.card-skills h2 {
 	width: 100%;
 	text-align: center;
 }

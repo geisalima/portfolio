@@ -94,8 +94,15 @@
 								<img src="imgs/html.png" alt="Imagem do HTML5">
 								<figcaption class="font-weight-bold text-center">HTML5</figcaption>
 							</figure>
+							<button id="teste1">teste</button>
 						</article>
 					</div>
+
+					<div class="teste" style="display: none;">
+						Voto computado com sucesso!
+						<div class="addthis_inline_share_toolbox" data-url="http://192.168.3.5/votacao-charges/" data-title="Teste" data-description="teste de descricao" data-media="https://conexaoplaneta.com.br/wp-content/uploads/2017/01/onde-a-natureza-esta-abre-conexao-planeta-foto-marcos-amend.jpg"></div>
+					</div>
+
 					<div class="col-lg-3 col-6">
 						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
@@ -276,5 +283,17 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ae3ba1516ef15d"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('#teste1').click(function (e) {
+                e.preventDefault();
+                $('.teste').show();
+            })
+        })
+    </script>
+    
 </body>
 </html>

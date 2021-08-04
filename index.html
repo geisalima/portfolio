@@ -300,9 +300,11 @@
             	description: "lorem",
             	media: "https://conexaoplaneta.com.br/wp-content/uploads/2017/01/onde-a-natureza-esta-abre-conexao-planeta-foto-marcos-amend.jpg"
             }
-            
-            addthis.layers.refresh();
         })
+
+        window.addEventListener("hashchange", function () {
+        	addthis.layers.refresh();
+        });
     </script>
 
 </body>

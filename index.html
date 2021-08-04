@@ -94,13 +94,7 @@
 								<img src="imgs/html.png" alt="Imagem do HTML5">
 								<figcaption class="font-weight-bold text-center">HTML5</figcaption>
 							</figure>
-							<button id="teste1">teste</button>
 						</article>
-					</div>
-
-					<div class="teste">
-						Voto computado com sucesso!
-						<div class="addthis_toolbox"></div>
 					</div>
 
 					<div class="col-lg-3 col-6">
@@ -283,37 +277,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ae3ba1516ef15d"></script> -->
-
-	<script type="text/javascript">
-        $(document).ready(function () {
-            $('#teste1').on('click', function (e) {
-                e.preventDefault();
-                $('.teste').show();
-            });
-        });
-
-
-		window.addthis_reload = function () {
-			if (!window.addthis) {
-		    // Load addThis, if it hasn't already been loaded.
-		    window['addthis_config'] = { 'data_track_addressbar' : false, 'pubid': 'ra-60ae3ba1516ef15d' };
-			$('body').append('<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js">');
-		} else {
-			// Already loaded? Then re-attach it to the newly rendered set of social icons.
-			// And reset share url/title, so they don't carry-over from the previous page.
-			window['addthis_share'].url = window.location.href;
-			window['addthis_share'].title = window.document.title;
-			window.addthis.toolbox('.addthis_toolbox');
-		}
-		}
-
-        window.addEventListener("hashchange", function () {
-        	addthis.layers.refresh();
-        });
-    </script>
 
 </body>
 </html>

@@ -89,31 +89,20 @@
 				<h1 class="section-title text-center">Conhecimentos</h1>
 				<div class="row">
 					<div class="col-lg-3 col-6">
-						<article class="card-skills d-flex flex-column align-items-center justify-content-center" data-charge="Charge 1">
+						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/html.png" alt="Imagem do HTML5">
 								<figcaption class="font-weight-bold text-center">HTML5</figcaption>
 							</figure>
-							<button class="btn-voto">Votar</button>
 						</article>
-
-						<!-- <div class="charge1">
-                            Voto computado com sucesso!
-                            <div class="addthis_inline_share_toolbox" data-url="https://www.opovo.com.br/" data-title="Votou na charge 1" data-description="teste de descricao 1" data-media="imgs/html.png"></div>
-                        </div> -->
 					</div>
 
-					<div class="popup">
-                        Voto computado com sucesso!
-                    </div>
-
 					<div class="col-lg-3 col-6">
-						<article class="card-skills d-flex flex-column align-items-center justify-content-center" data-charge="Charge 2">
+						<article class="card-skills d-flex flex-column align-items-center justify-content-center">
 							<figure>
 								<img src="imgs/css.png" alt="Imagem do CSS3">
 								<figcaption class="font-weight-bold text-center">CSS3</figcaption>
 							</figure>
-							<button class="btn-voto">Votar</button>
 						</article>
 					</div>
 					<div class="col-lg-3 col-6">
@@ -288,18 +277,5 @@
 			</div>
 		</div>
 	</footer>
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-610461cd67784d86"></script>
-
-	<script type="text/javascript">
-		$('.btn-voto').click(function (e) {
-			e.preventDefault();
-			var nomeCharge = $(this).parent().data('charge');
-			console.log(nomeCharge);
-			$('.popup').append(`<div class="addthis_inline_share_toolbox" data-title="Votou na charge ${nomeCharge}" data-media="https://mais.opovo.com.br/_midias/jpg/2021/08/05/295x500/1_32629948352_07d154fe10_3k-16720830.jpg?20210805124611"></div>`);
-			addthis.layers.refresh();
-		})
-	</script>
 </body>
 </html>

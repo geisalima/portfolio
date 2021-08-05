@@ -302,7 +302,8 @@
 			e.preventDefault();
 			var nomeCharge = $(this).parent().data('charge');
 			console.log(nomeCharge);
-			$('.popup').append(`<div class="addthis_inline_share_toolbox" data-title="Votou na charge ${nomeCharge}" ></div>`)
+			$('.popup').append(`<div class="addthis_inline_share_toolbox" data-title="Votou na charge ${nomeCharge}" ></div>`);
+			addthis.layers.refresh();
 		})
 	</script>
 </body>
